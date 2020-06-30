@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+body{
+	background: #ffffff;
+}
+section{
+	padding: 25px 0;
+}
+.jumbotron{
+	background: url(../img/site_showcase_bg.jpg) no-repeat top center;
+	color: #ffffff;
+	height: 498px;
+	overflow: hidden;
+	padding: 0;
+}
+.jumbotron .text{
+	margin-top: 150px;
+}
+.jumbotron .text h1{
+	font-size: 50px;
+}
+.jumbotron .text p{
+	padding-bottom: 20px;
+}
+.jumbotron .app_btn{
+	width: 40%;
+	margin-right: 30px;
+}
+
+.jumbotron .show_case_image{
+	padding: 50px 0 0 0;
+	width: 75%;
+}
+img.demo_img{
+	width: 100%;
+	padding: 3px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+.col-md-4{
+	margin-bottom: 25px;
+}
+section#feature{
+	background: #1caa98;
+	color: #ffffff;
+	padding: 45px 0;
+	overflow: hidden; 
+}
+section#feature ul li{
+	font-size: 22px;
+	line-height: 2em;
+}
+footer{
+	color: #fff;
+	background: #333;
+	overflow: hidden;
+}
+footer li{
+	float: left;
+	padding: 0 10px;
+}
+footer li a{
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+}
+footer p{
+	float: right;
+	line-height: 80px;
+	text-align: center;
+}
+section#about{
+	padding: 15px 0 40px 0;
+}
+.active{
+	background: #ddd;
+}
+section#title_bar{
+	height: 80px;
+	background: #1caa98;
+	color: #ffffff;
+	margin-top: 58px;
+}
+section#title_bar h1{
+	line-height: 0;
+}
+section#contact{
+	padding: 15px 0 40px 0;
+}
+/*large Screen*/
+@media(min-width: 1200px){
+	
+}
+/*Normal Screen*/
+@media(min-width: 992px) and (max-width: 1199px){
+	.jumbotron .app_btn img{
+		width: 35%;
+	}
+}
+/*Tablet*/
+@media(min-width: 768px) and (max-width: 991px){
+	.jumbotron{
+		height: 400px !important;
+		background-size: 100% 100%;
+	}
+	.jumbotron .text {
+		margin-top: 65px;
+}
+	.jumbotron .app_btn img{
+		width: 35%;
+	}
+	.show_case{
+		display: none;
+	}
+}
+/*Android mobile*/
+@media(min-width: 576px) and (max-width: 767px){
+	.jumbotron{
+		height: 400px !important;
+		background-size: 100% 100%;
+	}
+	.jumbotron .app_btn img{
+		width: 25%;
+
+	}
+	.show_case{
+		display: none;
+	}
+	footer p{
+		float: none;
+	}
+}
+/*Small mobile*/
+@media(max-width: 575px){
+	.show_case{
+		display: none;
+	}
+	.jumbotron{
+		text-align: center;
+		background-size: 100% 100%;
+	}
+	.jumbotron .app_btn img{
+		padding-top: 15px;
+		width: 50%;
+	}
+	footer p{
+		float: none;
+	}
+}
